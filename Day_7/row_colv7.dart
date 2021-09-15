@@ -5,7 +5,6 @@ void main() {
     row_col(),
   );
 }
-
 class row_col extends StatelessWidget {
   const row_col({Key? key}) : super(key: key);
 
