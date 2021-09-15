@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    row_col(),
+  );
+}
+
+class row_col extends StatelessWidget {
+  const row_col({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Row Col'),
+          backgroundColor: Colors.amber,
+        ),
+        body: Column(
+            children: [
+              Text(
+                'This is body',
+                style: TextStyle(
+                    fontSize: 40.0,
+                    color: Colors.blueGrey,
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'I am also body',
+                style: TextStyle(
+                    fontSize: 40.0,
+                    color: Colors.blueGrey.shade800,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+      ),
+    );
+  }
+}
