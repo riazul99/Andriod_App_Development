@@ -1,5 +1,5 @@
 void main() {
-  ///list er type hosse map type and map er first part key jeita string type
+  ///list er type hosse map type and map er first part "key" jeita string type
   ///and porer part ta different type tai daynamic .
   /// duita {} er modde akta kore element dewa.
   List<Map<String, dynamic>> userList = [
@@ -9,19 +9,19 @@ void main() {
                 "age" : 22,
                 "transection" : [200, 300, 500]
                 
-              },
+              }, //first element
               { 
                 "name" : "Karim",
                 "email":"karim@email.com",
                 "age" : 33,
                 "transection" : [44, 55, 99, 99, 87]
-              },      
+              }, //second element    
               { 
                 "name" : "Akkas",
                 "email":"akkas@email.com",
                 "age" : 44,
                 "transection" : [33, 44, 55, 88, 99, 33, 44, 55, 88, 99]
-              }    
+              }  //third element
           ];
   
   for(int i=0; i<userList.length; i++){
@@ -35,7 +35,7 @@ void main() {
       print("    Transection ${j+1} - ${userList[i]["transection"][j]}");
     }
     
-    print("----------");
+    print("-----END-----");
   }
 
 }
